@@ -191,3 +191,71 @@ textarea {
     margin: 0;
     line-height: 30px;
 }
+@media screen and (max-width: 768px) {
+    .upper {
+        font-size: 40px;
+    }
+
+    .lower {
+        padding: 40px 20px;
+        font-size: 16px;
+    }
+
+    .lower > button {
+        width: 250px;
+        font-size: 25px;
+        height: 80px;
+        margin: 10px;
+    }
+
+    .desc {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .dp {
+        font-size: 20px;
+    }
+
+    .add-block {
+        width: 90%;
+        height: auto;
+    }
+
+    .picture {
+        height: 300px;
+        width: 300px;
+    }
+
+    .input,
+    .textarea {
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details {
+        align-items: center;
+    }
+
+    .add-btn {
+        width: 100px;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    ._close {
+        font-size: 14px;
+        width: 25px;
+        height: 25px;
+    }
+}
