@@ -191,6 +191,7 @@ textarea {
     margin: 0;
     line-height: 30px;
 }
+
 @media screen and (max-width: 768px) {
     .upper {
         font-size: 40px;

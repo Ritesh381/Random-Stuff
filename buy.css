@@ -287,3 +287,130 @@ hr{
     justify-content: flex-end;
     align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+    #name {
+        font-size: 40px;
+    }
+
+    .upper {
+        font-size: 60px;
+    }
+
+    .spawn {
+        width: 50%;
+        font-size: 25px;
+    }
+
+    #search {
+        width: 100%;
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 100%;
+        height: auto;
+        font-size: 18px;
+    }
+
+    .picture {
+        height: 150px;
+        width: 200px;
+    }
+
+    #p-title {
+        font-size: 18px;
+    }
+
+    #p-use {
+        font-size: 16px;
+    }
+
+    .spawn-box, .details-box {
+        width: 90%;
+    }
+
+    .title, .detail-title {
+        width: 100%;
+        height: auto;
+    }
+
+    #title, #detail-title {
+        font-size: 25px;
+    }
+
+    #desc, #detail-desc {
+        font-size: 16px;
+    }
+
+    .spawn-next {
+        justify-content: space-between;
+    }
+
+    .next {
+        font-size: 18px;
+        width: 150px;
+    }
+
+    .prev-thing, .next-thing {
+        width: 80px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #name {
+        font-size: 30px;
+    }
+
+    .upper {
+        font-size: 50px;
+    }
+
+    .spawn {
+        font-size: 20px;
+    }
+
+    #search {
+        font-size: 18px;
+    }
+
+    .product {
+        width: 50%;
+        height: auto;
+        font-size: 16px;
+    }
+
+    .picture {
+        height: 120px;
+        width: 150px;
+    }
+
+    .spawn-box, .details-box {
+        width: 90%;
+    }
+
+    .title, .detail-title {
+        width: 100%;
+        height: auto;
+    }
+
+    #title, #detail-title {
+        font-size: 20px;
+    }
+
+    .next {
+        font-size: 16px;
+    }
+
+    .prev-thing, .next-thing {
+        width: 70px;
+        font-size: 14px;
+    }
+}
