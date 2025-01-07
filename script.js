@@ -1,8 +1,8 @@
 const photoLink = document.querySelector(".photo-link");
 const imgFile = document.querySelector("#uploaded-image");
 
-
 let products = JSON.parse(localStorage.getItem('data'));
+localStorage.removeItem('data');
 
 if (products) {
     console.log(products);
@@ -78,7 +78,7 @@ document.querySelector('.add-btn').addEventListener('click', function () {
     }
     products.push(product);
     localStorage.removeItem('data');
-    // localStorage.setItem('data', JSON.stringify(products));
+    localStorage.setItem('data', JSON.stringify(products));
     alert("Product added successfully")
 });
 
