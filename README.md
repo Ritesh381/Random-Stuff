@@ -45,6 +45,14 @@ Currently, the website features local storage for saving data. A backend connect
 ## Screenshots
 
 ![image](https://github.com/user-attachments/assets/5d24b9fd-b15a-4986-bbea-fc2199dea2ec)
+![image](https://github.com/user-attachments/assets/1df5e683-78ba-44b7-ab3f-0f559d676ca9)
+![image](https://github.com/user-attachments/assets/d2045a76-df53-4f67-95ed-d63d28c2b406)
+![image](https://github.com/user-attachments/assets/1e7aef16-44e0-4df5-95cc-48c289c25414)
+![image](https://github.com/user-attachments/assets/794c4b32-6260-4949-9610-def5ccd85aca)
+![image](https://github.com/user-attachments/assets/547fbfcb-7a34-438c-8e5e-1414f5982ad4)
+
+
+
 
 
 ## Technologies Used
