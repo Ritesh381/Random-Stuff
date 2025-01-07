@@ -37,11 +37,12 @@ Currently, the website features local storage for saving data. A backend connect
    - Randomly browse items using the "spawn" feature.
 
 3. **Local Storage:**
-   - All products are saved locally on the user's device.
+   - All products are saved locally on the user's device after adding them and can be seen in the "find a thing" section.
 
 ## Screenshots
 
-*(Insert screenshots or images here)*
+![image](https://github.com/user-attachments/assets/5d24b9fd-b15a-4986-bbea-fc2199dea2ec)
+
 
 ## Technologies Used
 
@@ -86,8 +87,8 @@ To get started with this project locally:
 - **Product Reviews:**
   - Add functionality for users to rate or review "things."
 
-- **Responsive Design:**
-  - Ensure better support for mobile devices.
+- **Product editing:**
+  - Edit or delete the things you have added.
 
 ## Contributing
 
