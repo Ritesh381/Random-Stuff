@@ -102,6 +102,7 @@ for(let i = 0; i<titles.length; i++){
 // Create and Add a Product Div to the Container
 function makeDiv(title, useCase, imageUrl, prodLink, tags) {
     const productDiv = document.createElement('div');
+    tags = tags.trim();
     tags = tags.split(' ');
     productDiv.classList.add('product', ...tags);
 
