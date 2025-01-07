@@ -69,16 +69,16 @@ document.querySelector('.add-btn').addEventListener('click', function () {
 
 
     let product = {
-        "title": title,
-        "description": description,
-        "useCase": useCase,
-        "tags": tags,
-        "link": link,
-        "imagePath": imageLink
+        "title": title.trim(),
+        "description": description.trim(),
+        "useCase": useCase.trim(),
+        "tags": tags.trim(),
+        "link": link.trim(),
+        "imagePath": imageLink.trim()
     }
     products.push(product);
     localStorage.removeItem('data');
-    localStorage.setItem('data', JSON.stringify(products));
+    // localStorage.setItem('data', JSON.stringify(products));
     alert("Product added successfully")
 });
 
