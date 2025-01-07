@@ -35,6 +35,9 @@ Currently, the website features local storage for saving data. A backend connect
 2. **Find a Thing:**
    - Search for items using keywords.
    - Randomly browse items using the "spawn" feature.
+   - Click on the rocket icon for more information of the thing.
+   - Click the title of any product to get a detailed view of the thing.
+   - You can navigate the products by clicking next and prev.
 
 3. **Local Storage:**
    - All products are saved locally on the user's device after adding them and can be seen in the "find a thing" section.
