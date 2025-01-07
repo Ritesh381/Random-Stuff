@@ -1,7 +1,6 @@
 const photoLink = document.querySelector(".photo-link");
 const imgFile = document.querySelector("#uploaded-image");
 
-localStorage.removeItem('data');
 let products = JSON.parse(localStorage.getItem('data'));
 
 if (products) {
