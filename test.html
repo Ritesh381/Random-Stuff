@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Confirm Dialog</title>
+    <style>
+        /* Overlay to disable background clicks */
+        /* .overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+            z-index: 1000;
+        } */
+
+        /* Modal box */
+        .modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            z-index: 1001;
+            display: none;
+        }
+
+        /* Red text for "permanently" */
+        .warning-text {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 8px 15px;
+            border: none;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn-confirm { background: red; color: white; }
+        .btn-cancel { background: gray; color: white; }
+
+    </style>
+</head>
+<body>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay" onclick="closeModal()"></div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <p>Are you sure you want to delete <b id="item-name"></b>?</p>
+        <p><span class="warning-text">This will be permanently deleted</span> and cannot be recovered.</p>
+        <button class="btn btn-confirm" onclick="confirmDelete()">Yes, Delete</button>
+        <button class="btn btn-cancel" onclick="closeModal()">Cancel</button>
+    </div>
+
+    <!-- Button to trigger modal -->
+    <button onclick="showModal('Sample Item')">Delete Item</button>
+
+    <script>
+        function showModal(itemName) {
+            document.getElementById("item-name").textContent = itemName;
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("modal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("modal").style.display = "none";
+        }
+
+        function confirmDelete() {
+            console.log("Item deleted");
+            closeModal();
+        }
+    </script>
+
+</body>
+</html>

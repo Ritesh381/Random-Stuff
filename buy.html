@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/buy.css">
+    <script src="https://kit.fontawesome.com/589957875e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+</head>
+<body>
+    
+    <h1 id="name"><a href="index.html">Random Stuff</a></h1>
+    <div class="upper">
+        <button class="spawn">Click to spawn a thing</button>
+        <div class="search-bar">
+            <input type="text" name="search" id="search" placeholder="Search a thing">
+            <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+    
+    <div class="spawn-box">
+        <div class="title-pic">
+            <div class="spawned-pic">
+                <img id="pic" src="" alt="spanned thing visual">
+            </div>
+            <div class="title">
+                <p id="title">Title of the thing</p>
+                <hr>
+                <p id="desc">Description of the thing</p>
+            </div>
+        </div>
+
+        <div class="lower">
+            <p id="spawn-use">Use case of the thing</p>
+        </div>
+        <hr>
+        <div class="spawn-next">
+            <a href="" id="spawn-rocket" target="_blank"><i class="fa-solid fa-rocket"></i></a>
+            <p id="next">Didn't like it </p>
+            <button class="next">Spawn another</button>
+        </div>
+
+        <button class="close">X</button>
+    </div>
+
+
+    <div class="details-box">     <!-- copied from the spanw box for showing details of the things-->
+        <div class="detail-title-pic">
+            <div class="detail-spawned-pic">
+                <img id="detail-pic" src="" alt="spanned thing visual">
+            </div>
+            <div class="detail-title">
+                <p id="detail-title">Title of the thing</p>
+                <hr>
+                <p id="detail-desc">Description of the thing</p>
+            </div>
+        </div>
+
+        <div class="detail-lower">
+            <p id="detail-spawn-use">Use case of the thing</p>
+        </div>
+        <hr>
+        <button class="detail-close">X</button>
+        <div class="detail-next">
+            <a href="" id="detail-spawn-rocket" target="_blank"><i class="fa-solid fa-rocket"></i></a>
+            <div class="prev-next">
+                <button class="prev-thing">< Prev</button>
+                <button class="next-thing">Next ></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="product-container">
+        <!-- <div class="product">
+            <a href="google.com" target="_blank"><i class="fa-solid fa-rocket"></i></a>
+            <div class="picture">
+                <img src="" alt="thing visual">
+            </div>
+            <p id="p-title">Title of the thing</p>
+            <hr>
+            <p id="p-use">Use case of this thing</p>
+        </div> -->
+    </div>
+
+
+    
+
+
+    <p id="not-found"></p>
+
+    <script src="public/js/supabase.js"></script>
+    <script src="public/js/buy.js"></script>
+</body>
+</html>

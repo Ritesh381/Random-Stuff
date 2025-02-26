@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="public/css/dashboard.css" />
+    <script
+      src="https://kit.fontawesome.com/589957875e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  </head>
+  <body>
+    <h1 id="heading">Random Stuff Dashboard</h1>
+    <div class="auth">
+      <p id="name">Hello,</p>
+      <p id="logout">
+        Logout <i class="fa fa-sign-out" aria-hidden="true"></i>
+      </p>
+    </div>
+    <a href="index.html" id="home">HOME</a>
+    <div class="buttons">
+      <button id="add">Add</button>
+      <button id="find">Find</button>
+    </div>
+    <div class="searchCont">
+      <div class="search-bar">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search a thing"
+        />
+        <button class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+    <div class="Contribution-container">
+      <h3>Your Contributions</h3>
+      <div class="your-contribution">
+        <div class="nothing">
+          <p>You have no contributions on this website 🫤</p>
+          <br />
+          <button>MAKE YOUR FIRST CONTRIBUTION</button>
+        </div>
+        <!-- <div class="product">
+          <a href="" target="_blank">
+            <i class="fa-solid fa-rocket"></i>
+          </a>
+          <div class="picture">
+            <img src="" alt="Product visual" />
+          </div>
+          <p id="p-title">lorem</p>
+          <hr />
+          <p id="p-use">${useCase}</p>
+          <div class="buts">
+            <button id="delete">Delete</button>
+            <button id="edit">Edit</button>
+          </div>
+        </div> -->
+      </div>
+      <p id="not-found"></p>
+    </div>
+
+    <div class="add-block">
+      <button class="_close">X</button>
+
+      <div class="container">
+        <div class="picture-add-block">
+          <p class="upload-text">Image will appear here</p>
+          <img
+            id="uploaded-image"
+            src=""
+            alt=""
+            style="display: none; width: 100%; height: 100%; object-fit: cover"
+          />
+        </div>
+
+        <form class="details" id="product-form">
+          <input type="text" class="_title" placeholder="Title" required />
+          <textarea
+            name="Description"
+            id="_description"
+            placeholder="Description"
+            required
+          ></textarea>
+          <textarea
+            name="use"
+            id="_use"
+            placeholder="Funny use case of this product"
+            required
+          ></textarea>
+          <textarea
+            name="tags"
+            id="_tags"
+            placeholder="Tags (used in search)"
+            required
+          ></textarea>
+          <input
+            type="text"
+            id="_link"
+            placeholder="Link of the product"
+            required
+          />
+          <input
+            type="text"
+            id="_photoLink"
+            class="photo-link"
+            placeholder="Link of the image"
+            required
+          />
+          <button type="submit" class="add-btn">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Box for detailed view of a product -->
+    <div class="details-box">
+      <div class="detail-title-pic">
+        <div class="detail-spawned-pic">
+          <img id="detail-pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ-c1Oe0GT1EbOeue2_OMLcS6bAan3GHPLoA&s" alt="spanned thing visual" />
+        </div>
+        <div class="detail-title">
+          <p id="detail-title">Title of the thing</p>
+          <hr />
+          <p id="detail-desc">Description of the thing</p>
+        </div>
+      </div>
+
+      <div class="detail-lower">
+        <p id="detail-spawn-use">Use case of the thing</p>
+      </div>
+      <hr />
+      <button class="detail-close">X</button>
+      <div class="detail-next">
+        <a href="" id="detail-spawn-rocket" target="_blank"
+          ><i class="fa-solid fa-rocket"></i
+        ></a>
+        <div class="prev-next">
+          <button class="prev-thing">< Prev</button>
+          <button class="next-thing">Next ></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Box for the EDIT button -->
+    <div class="edit-box">
+      <div class="detail-title-pic">
+        <div class="edit-pic">
+          <img id="detail-pic" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ-c1Oe0GT1EbOeue2_OMLcS6bAan3GHPLoA&s" alt="spanned thing visual" />
+        </div>
+        <div class="detail-title">
+          <div class="title inp">
+            <p>Title: </p>
+            <input type="text" name="" id="title-inp" required>
+          </div>
+          <div class="description inp">
+            <p>Description: </p>
+            <textarea name="" id="description-inp" required></textarea>
+          </div>
+          <div class="useCase-inp inp">
+            <p>UseCase: </p>
+            <textarea name="" id="useCase-inp" required></textarea>
+          </div>
+          <div class="tags-inp">
+            <p>Tags: </p>
+            <input type="text" name="" id="tags-inp" required>
+          </div>
+        </div>
+      </div>
+      <div class="edit-buttons">
+        <div class="prod-inp link">
+          <p>Product URL: </p>
+          <input type="text" name="" id="product-inp" required>
+        </div>
+        <div class="image-inp link">
+          <p>Image URL: </p>
+          <input id="edit-img-link" type="text" required>
+        </div>
+        <button class="edit-close">X</button>
+        <button class="save-edit">Save</button>
+      </div>
+    </div>
+
+    <div class="deleteBox">
+      <p>Are you sure you want to delete <b id="item-name"></b>?</p>
+      <p><span class="warning-text">This will be permanently deleted</span> and cannot be recovered.</p>
+      <button class="btn btn-confirm">Yes, Delete</button>
+      <button class="btn btn-cancel">Cancel</button>
+    </div>
+    
+
+    <script src="public/js/supabase.js"></script>
+    <script src="public/js/validation.js"></script>
+    <script src="public/js/dashboard.js"></script>
+
+  </body>
+</html>

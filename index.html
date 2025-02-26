@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random stuff</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <link rel="stylesheet" href="public/css/style.css" />
+  </head>
+  <body>
+    <div class="login-signup">
+      <p>Login/Signup</p>
+    </div>
+    <div class="upper">
+      <h1>Random Stuff</h1>
+    </div>
+    <div class="seperator"></div>
+    <div class="lower">
+      <button class="add">Add a thing</button>
+      <button class="buy">Find a thing</button>
+    </div>
+    <hr />
+    <div class="desc">
+      <p class="dp">
+        On this site, you'll stumble upon random stuff you never knew you
+        needed—like a spork for spaghetti or a hat for your cat.
+      </p>
+      <p class="dp">
+        Got a wacky idea? Add your own! Who knows? It might just change the
+        world... or at least make someone chuckle.
+      </p>
+    </div>
+
+    <div class="add-block">
+      <button type="button" class="_close">X</button>
+
+      <div class="container">
+        <div class="picture">
+          <p class="upload-text">Image will appear here</p>
+          <img
+            id="uploaded-image"
+            src=""
+            alt=""
+            style="display: none; width: 100%; height: 100%; object-fit: cover"
+          />
+        </div>
+
+        <form class="details" id="product-form">
+          <input type="text" class="_title" placeholder="Title" required />
+          <textarea
+            name="Description"
+            id="_description"
+            placeholder="Description"
+            required
+          ></textarea>
+          <textarea
+            name="use"
+            id="_use"
+            placeholder="Funny use case of this product"
+            required
+          ></textarea>
+          <textarea
+            name="tags"
+            id="_tags"
+            placeholder="Tags (used in search)"
+            required
+          ></textarea>
+          <input
+            type="text"
+            id="_link"
+            placeholder="Link of the product"
+            required
+          />
+          <input
+            type="text"
+            id="_photoLink"
+            class="photo-link"
+            placeholder="Link of the image"
+            required
+          />
+          <button type="submit" class="add-btn">Add</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="public/js/supabase.js"></script>
+    <script src="public/js/script.js"></script>
+    <script src="public/js/validation.js"></script>
+
+  </body>
+</html>
+
+
+

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="public/css/login.css">
+</head>
+<body>
+    <h1>Random Stuff</h1>
+    <div class="container" id="login-container">
+        <h2>Login</h2>
+        <form class="login">
+            <input type="text" name="email" placeholder="Email/Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p class="switch">Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
+    </div>
+
+    <div class="container" id="signup-container" style="display: none;">
+        <h2>Sign Up</h2>
+        <form class="signup">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p class="switch">Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+    </div>
+
+    <script src="public/js/auth.js"></script>
+    <script src="public/js/supabase.js"></script>
+</body>
+</html>
