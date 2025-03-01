@@ -22,7 +22,7 @@ This website allows users to upload and browse products (referred to as "things"
 - Manage their own products via the **Dashboard** (edit/delete options available).
 - Stay logged in even after closing the website (until they manually log out).
 
-Now, all data is stored online using **Supabase**, meaning all users can see each other's posts. Local storage is no longer used.
+All data is stored online using **Supabase**, meaning all users can see each other's posts.
 
 ## Features
 
@@ -83,15 +83,9 @@ To get started with this project locally:
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Ritesh381/Random-Stuff.git
    ```
-
-2. Navigate to the project folder:
-   ```bash
-   cd random-stuff-website
-   ```
-
-3. Open `index.html` in your browser to explore the site.
+2. Open `index.html` in your browser to explore the site.
 
 ## Future Improvements
 
